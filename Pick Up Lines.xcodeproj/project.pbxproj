@@ -14,6 +14,7 @@
 		5A9813D81F9257590046A9BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9813D61F9257590046A9BC /* LaunchScreen.storyboard */; };
 		5A9813E01F9258CB0046A9BC /* PickUpLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9813DF1F9258CB0046A9BC /* PickUpLineCell.swift */; };
 		5A9813E21F925B830046A9BC /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9813E11F925B830046A9BC /* AlertService.swift */; };
+		E620F622C7C9B969D03F7271 /* Pods_Pick_Up_Lines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD6A3D9F15DF0975076D119 /* Pods_Pick_Up_Lines.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		5A9813D91F9257590046A9BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A9813DF1F9258CB0046A9BC /* PickUpLineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpLineCell.swift; sourceTree = "<group>"; };
 		5A9813E11F925B830046A9BC /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		6B6E9912DCC8ADE49E9DB734 /* Pods-Pick Up Lines.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pick Up Lines.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pick Up Lines/Pods-Pick Up Lines.release.xcconfig"; sourceTree = "<group>"; };
+		CBD6A3D9F15DF0975076D119 /* Pods_Pick_Up_Lines.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pick_Up_Lines.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9B7FCDF5F325AD127C70357 /* Pods-Pick Up Lines.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pick Up Lines.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pick Up Lines/Pods-Pick Up Lines.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E620F622C7C9B969D03F7271 /* Pods_Pick_Up_Lines.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				5A9813CC1F9257590046A9BC /* Pick Up Lines Proto */,
 				5A9813CB1F9257590046A9BC /* Products */,
+				B3DCDF6F60DD54BD2BFD928E /* Pods */,
+				975D53F2FD38E73BDD96C43B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,23 @@
 			path = "Pick Up Lines Proto";
 			sourceTree = "<group>";
 		};
+		975D53F2FD38E73BDD96C43B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBD6A3D9F15DF0975076D119 /* Pods_Pick_Up_Lines.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3DCDF6F60DD54BD2BFD928E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9B7FCDF5F325AD127C70357 /* Pods-Pick Up Lines.debug.xcconfig */,
+				6B6E9912DCC8ADE49E9DB734 /* Pods-Pick Up Lines.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A9813DC1F9257590046A9BC /* Build configuration list for PBXNativeTarget "Pick Up Lines" */;
 			buildPhases = (
+				ECBD4742A03DE3E4C5308BA5 /* [CP] Check Pods Manifest.lock */,
 				5A9813C61F9257590046A9BC /* Sources */,
 				5A9813C71F9257590046A9BC /* Frameworks */,
 				5A9813C81F9257590046A9BC /* Resources */,
+				67BFA117B9763E6A4B05FC67 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +162,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67BFA117B9763E6A4B05FC67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pick Up Lines/Pods-Pick Up Lines-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pick Up Lines/Pods-Pick Up Lines-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECBD4742A03DE3E4C5308BA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pick Up Lines-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5A9813C61F9257590046A9BC /* Sources */ = {
@@ -280,6 +347,7 @@
 		};
 		5A9813DD1F9257590046A9BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9B7FCDF5F325AD127C70357 /* Pods-Pick Up Lines.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +363,7 @@
 		};
 		5A9813DE1F9257590046A9BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6E9912DCC8ADE49E9DB734 /* Pods-Pick Up Lines.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
